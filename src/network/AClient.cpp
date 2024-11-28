@@ -45,13 +45,14 @@ namespace Lattice {
 
     void AClient::read() {
         std::vector<char> data(1024);
+        const asio::mutable_buffer buffer = asio::buffer(data);
 
-        this->_socket->async_receive(asio::buffer(data),
-                                     [this, data](const asio::error_code &error,
-                                                  const std::size_t
-                                                  bytesTransferred) {
-                                         const std::string dataStr(data.begin(),
-                                             data.begin() +
+        this->_socket->async_receive(buffer,
+                                     [this, buffer](const asio::error_code &error,
+                                                    const std::size_t
+                                                    bytesTransferred) {
+                                         const std::string dataStr(
+                                             asio::buffer_cast<const char *>(buffer),
                                              bytesTransferred);
                                          this->handleRead(
                                              error, bytesTransferred, dataStr);
