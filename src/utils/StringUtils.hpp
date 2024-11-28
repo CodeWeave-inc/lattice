@@ -1,6 +1,7 @@
 #ifndef STRINGUTILS_HPP
 #define STRINGUTILS_HPP
 #include <string>
+#include <vector>
 
 namespace Lattice {
     class StringUtils final {

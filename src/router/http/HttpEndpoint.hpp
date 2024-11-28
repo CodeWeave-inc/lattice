@@ -1,5 +1,7 @@
 #ifndef HTTPENDPOINT_HPP
 #define HTTPENDPOINT_HPP
+#include <variant>
+
 #include "../../messages/http/Request.hpp"
 #include "../../messages/http/errors/AHttpError.hpp"
 
