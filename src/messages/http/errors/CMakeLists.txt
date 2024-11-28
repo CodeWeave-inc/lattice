@@ -1,0 +1,16 @@
+target_sources(Lattice
+        PUBLIC
+        ${CMAKE_CURRENT_LIST_DIR}/AHttpError.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/NoSuchHeaderException.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/NoSuchQueryException.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpVersionNotSupported.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/MethodNotAllowed.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/NotFound.hpp
+        PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}/AHttpError.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/NoSuchHeaderException.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/NoSuchQueryException.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpVersionNotSupported.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/MethodNotAllowed.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/NotFound.cpp
+)

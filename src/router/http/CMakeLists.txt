@@ -1,0 +1,12 @@
+target_sources(Lattice
+        PUBLIC
+        ${CMAKE_CURRENT_LIST_DIR}/HttpRoute.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpEndpoint.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpMiddleware.hpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpRouteBuilder.hpp
+        PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}/HttpRoute.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpEndpoint.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpMiddleware.cpp
+        ${CMAKE_CURRENT_LIST_DIR}/HttpRouteBuilder.cpp
+)

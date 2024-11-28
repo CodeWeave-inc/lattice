@@ -1,0 +1,5 @@
+add_subdirectory(messages)
+add_subdirectory(errors)
+add_subdirectory(utils)
+add_subdirectory(router)
+add_subdirectory(network)
